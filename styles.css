@@ -1,130 +1,89 @@
-/* إعدادات عامة */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-
 body {
-  background-color: #f5f5f7;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  font-family: "SF Pro Display", Arial, sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  scroll-behavior: smooth;
 }
 
-/* ترويسة الموقع */
 header {
-  background-color: #0078d4;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
-  font-size: 1.8rem;
+  margin: 0;
+  font-size: 24px;
 }
 
-header nav ul {
-  list-style: none;
+nav ul {
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-header nav ul li {
-  margin: 0 15px;
+nav ul li {
+  margin: 0 10px;
 }
 
-header nav ul li a {
-  color: #fff;
+nav ul li a {
   text-decoration: none;
+  color: #1d1d1f;
   font-weight: bold;
+  padding: 5px 10px;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #0071e3;
 }
 
-/* الأقسام */
-section {
-  padding: 2rem 0;
-}
-
-section h2 {
+.section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
 }
 
-section p {
-  text-align: center;
-  margin-bottom: 1.5rem;
+.home {
+  background: linear-gradient(135deg, #e5e5e5, #ffffff);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.about, .contact {
+  background: #ffffff;
 }
 
-/* شبكة التطبيقات */
+.apps {
+  background: #f5f5f7;
+}
+
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .app-card {
-  background-color: #fff;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none;
-}
-
-.app-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .app-card img {
-  max-width: 60px;
-  margin-bottom: 0.5rem;
+  max-width: 100%;
+  height: auto;
 }
 
-.app-card span {
-  color: #333;
-  font-weight: bold;
-  display: block;
-}
-
-/* قسم اتصل بنا */
-.contact ul {
-  list-style: none;
-  text-align: center;
-}
-
-.contact ul li {
-  margin: 0.5rem 0;
-}
-
-/* الفوتر */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-footer p {
-  margin: 0;
+.app-card:hover {
+  transform: translateY(-10px);
 }
