@@ -10,40 +10,43 @@
   <header>
     <div class="container">
       <h1>الشرقية للموبايل</h1>
-      <nav>
+      <button id="menu-toggle" aria-label="Toggle Menu">
+        ☰
+      </button>
+      <nav id="menu">
         <ul>
-          <li><a href="#home">الرئيسية</a></li>
-          <li><a href="#about">حول الموقع</a></li>
-          <li><a href="#apps">FRP Bypass</a></li>
-          <li><a href="#contact">اتصل بنا</a></li>
+          <li><a href="#home" data-section="home">الرئيسية</a></li>
+          <li><a href="#about" data-section="about">حول الموقع</a></li>
+          <li><a href="#apps" data-section="apps">FRP Bypass</a></li>
+          <li><a href="#contact" data-section="contact">اتصل بنا</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="home" class="home">
-    <div class="container">
-      <h2>مرحباً بكم في الشرقية للموبايل</h2>
-      <p>نقدم لكم أفضل الأدوات والخدمات لإصلاح الهواتف وتجاوز الحمايات.</p>
-    </div>
-  </section>
+  <main>
+    <section id="home" class="section active">
+      <div class="container">
+        <h2>مرحباً بكم في الشرقية للموبايل</h2>
+        <p>نقدم لكم أفضل الأدوات والخدمات لإصلاح الهواتف وتجاوز الحمايات.</p>
+      </div>
+    </section>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>حول الموقع</h2>
-      <p>مكتب الشرقية للموبايل يقدم خدمات متكاملة لصيانة الهواتف المحمولة، بما في ذلك صيانة جميع قطع الهاتف واستبدالها بجديدة وتجاوز حمايات FRP.</p>
-      <p>العنوان: الموصل الساحل الايسر حي الانتصار</p>
-      <p>ساعات العمل: من السبت إلى الخميس - من 9 صباحاً إلى 9 مساءً.</p>
-    </div>
-  </section>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>حول الموقع</h2>
+        <p>مكتب الشرقية للموبايل يقدم خدمات متكاملة لصيانة الهواتف المحمولة، بما في ذلك صيانة جميع قطع الهاتف واستبدالها بجديدة وتجاوز حمايات FRP.</p>
+        <p>العنوان: الموصل الساحل الايسر حي الانتصار</p>
+        <p>ساعات العمل: من السبت إلى الخميس - من 9 صباحاً إلى 9 مساءً.</p>
+      </div>
+    </section>
 
-  <section id="apps" class="apps">
-    <div class="container">
-      <h2>Bypass FRP</h2>
-      <p> </p>
-      <div class="app-grid">
-        <!-- التطبيقات -->
-        <a href="intent://com.sec.android.app.samsungapps/#Intent;scheme=android-app;end" class="app-card">
+    <section id="apps" class="section">
+      <div class="container">
+        <h2>Bypass FRP</h2>
+        <div class="app-grid">
+          <!-- التطبيقات -->
+          <a href="intent://com.sec.android.app.samsungapps/#Intent;scheme=android-app;end" class="app-card">
           <img src="icons/samsung_store.png" alt="Samsung Store">
           <span>Galaxy Store</span>
         </a>
@@ -106,26 +109,28 @@
         <a href="tel:100-000-000/#Intent;scheme=android-app;end" class="app-card">
           <img src="icons/call.png" alt="Call">
           <span>الاتصال</span>
-        </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>اتصل بنا</h2>
-      <p>للاستفسارات والمزيد من المعلومات، يمكنكم التواصل معنا عبر:</p>
-      <ul>
-        <li>البريد الإلكتروني: 7mmmr@bk.ru </li>
-        <li>الهاتف: +9647829993310</li>
-      </ul>
-    </div>
-  </section>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>اتصل بنا</h2>
+        <p>للاستفسارات والمزيد من المعلومات، يمكنكم التواصل معنا عبر:</p>
+        <ul>
+          <li>البريد الإلكتروني: 7mmmr@bk.ru</li>
+          <li>الهاتف: +9647829993310</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
       <p>&copy; 2024 الشرقية للموبايل. جميع الحقوق محفوظة.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
+                            </html>
